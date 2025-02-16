@@ -17,8 +17,8 @@ public class Worker(
         {
             logger.LogInformation("Customers RoleUpdater running at: {time}", DateTimeOffset.Now);
             var list = await customerStatusUpdater.GetAllCustomersAndUpdateRoleAsync();
-            await bus.Publish<ListCustomerId>(list);
-            await Task.Delay(60000, stoppingToken);
+            await bus.Publish<ListCustomerId>(list, stoppingToken);
+            await Task.Delay(6000, stoppingToken);
         }
     }
 }

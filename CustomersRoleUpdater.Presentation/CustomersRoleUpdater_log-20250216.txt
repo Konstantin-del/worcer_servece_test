@@ -1,0 +1,399 @@
+[16-02-2025 11:59:28.136 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 11:59:28 +03:00
+[16-02-2025 11:59:28.207 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> ListCustomerId
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> Contract.ListCustomerId
+   at lambda_method1(Closure, Object, ListCustomerId, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 11:59:28.247 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_ay7oyydz4f8pmc43bdqwh4bz89?temporary=true ("Not Started")
+[16-02-2025 12:08:18.207 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:08:18 +03:00
+[16-02-2025 12:08:18.265 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:08:18.300 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_ayuyyydz4f8pk6otbdqwh4mu85?temporary=true ("Not Started")
+[16-02-2025 12:08:18.351 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 12:10:47.120 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:10:47 +03:00
+[16-02-2025 12:10:47.185 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:10:47.218 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_oyfoyydz4f8pk1thbdqwh4qcf5?temporary=true ("Not Started")
+[16-02-2025 12:10:47.252 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 12:16:47.456 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:16:47 +03:00
+[16-02-2025 12:16:47.759 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:16:47.989 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_no1oyydz4f8pkmo8bdqwh4idda?temporary=true ("Not Started")
+[16-02-2025 12:19:04.605 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:19:04 +03:00
+[16-02-2025 12:19:04.907 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:19:05.085 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_jbmoyydz4f8pk66jbdqwh4zib3?temporary=true ("Not Started")
+[16-02-2025 12:23:27.373 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:23:27 +03:00
+[16-02-2025 12:23:27.713 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:23:27.865 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_gbiyyydz4f8pk7i7bdqwh4htgz?temporary=true ("Not Started")
+[16-02-2025 12:23:27.866 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 12:27:19.755 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:27:19 +03:00
+[16-02-2025 12:27:20.079 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:27:20.175 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_1b4oyydz4f8pmx5wbdqwh5yhnz?temporary=true ("Not Started")
+[16-02-2025 12:35:08.080 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 12:35:08 +03:00
+[16-02-2025 12:35:08.352 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 12:35:08.456 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_cbayyydz4f8pk8hnbdqwh5jurb?temporary=true ("Not Started")
+[16-02-2025 13:21:44.896 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:21:44 +03:00
+[16-02-2025 13:23:45.799 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 18
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 36
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 13:24:09.845 MassTransit WRN] #: Connection Failed: rabbitmq://localhost/
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.IO.IOException: connection.start was never received, likely due to a network timeout
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.CreateException(SocketError error, Boolean forAsyncThrow)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ReceiveAsync(Socket socket, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ReceiveAsync(Memory`1 buffer, SocketFlags socketFlags, Boolean fromNetworkStream, CancellationToken cancellationToken)
+   at System.Net.Sockets.NetworkStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeReader.ReadInternalAsync(Nullable`1 minimumSize, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFromPipeAsync(PipeReader reader, UInt32 maxInboundMessageBodySize, InboundFrame frame, CancellationToken mainLoopCancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFromPipeAsync(PipeReader reader, UInt32 maxInboundMessageBodySize, InboundFrame frame, CancellationToken mainLoopCancellationToken)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrameAsync(InboundFrame frame, CancellationToken mainLoopCancellationToken)
+   at RabbitMQ.Client.Framing.Connection.ReceiveLoopAsync(CancellationToken mainLoopCancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at RabbitMQ.Client.Framing.Connection.ReceiveLoopAsync(CancellationToken mainLoopCancellationToken)
+   at RabbitMQ.Client.Framing.Connection.MainLoop()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at RabbitMQ.Client.Framing.Connection.MainLoop()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+--- End of stack trace from previous location ---
+
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.StreamPipeReader.<ReadInternalAsync>g__Core|40_0(StreamPipeReader reader, Nullable`1 minimumSize, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at RabbitMQ.Client.Impl.InboundFrame.ReadFromPipeAsync(PipeReader reader, UInt32 maxInboundMessageBodySize, InboundFrame frame, CancellationToken mainLoopCancellationToken)
+   at RabbitMQ.Client.Framing.Connection.ReceiveLoopAsync(CancellationToken mainLoopCancellationToken)
+   at RabbitMQ.Client.Framing.Connection.MainLoop()
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Framing.Connection.StartAndTuneAsync(CancellationToken cancellationToken)
+   at RabbitMQ.Client.Framing.Connection.OpenAsync(CancellationToken cancellationToken)
+   at RabbitMQ.Client.Framing.Connection.OpenAsync(CancellationToken cancellationToken)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnectionAsync(IEndpointResolver endpointResolver, String clientProvidedName, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnectionAsync(IEndpointResolver endpointResolver, String clientProvidedName, CancellationToken cancellationToken)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 101
+[16-02-2025 13:24:25.673 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_jyxyyydz4f8pmbtobdqwhh7srn?temporary=true ("Not Started")
+[16-02-2025 13:25:23.101 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:25:23 +03:00
+[16-02-2025 13:31:39.267 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:31:39 +03:00
+[16-02-2025 13:31:54.781 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:31:54 +03:00
+[16-02-2025 13:31:55.042 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 19
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 37
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 13:31:55.184 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_hbyoyydz4f8pk9fsbdqwh7jnym?temporary=true ("Not Started")
+[16-02-2025 13:41:52.141 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:41:52 +03:00
+[16-02-2025 13:41:52.381 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 19
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 37
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 13:41:52.515 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_sbiyyydz4f8pkhrrbdqwh7wgy4?temporary=true ("Not Started")
+[16-02-2025 13:51:52.688 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:51:52 +03:00
+[16-02-2025 13:51:52.750 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 31
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 49
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 13:51:52.783 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_gbcyyydz4f8pmm4kbdqwh79cy4?temporary=true ("Not Started")
+[16-02-2025 13:51:52.813 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 13:52:23.165 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:52:23 +03:00
+[16-02-2025 13:52:23.414 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.List`1[[Contract.CustomerId, Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Guid -> CustomerId
+System.Guid -> Contract.CustomerId
+   at lambda_method2(Closure, Guid, CustomerId, ResolutionContext)
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method1(Closure, Object, List`1, ResolutionContext)
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.UpdateCustomerRoles(List`1 customers) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 31
+   at CustomersRoleUpdater.Application.CustomersStatusUpdater.GetAllCustomersAndUpdateRoleAsync() in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Application\CustomersStatusUpdater.cs:line 49
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 19
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 13:52:23.560 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_mtzoyydz4f8pmk4dbdqwh796be?temporary=true ("Not Started")
+[16-02-2025 13:56:59.707 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 13:56:59 +03:00
+[16-02-2025 13:57:00.218 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+System.ArgumentException: Messages types must not be in the System namespace: System.Collections.Generic.List<System.Guid> (Parameter 'T')
+   at MassTransit.Topology.PublishTopology.GetMessageTopology[T]() in /_/src/MassTransit.Abstractions/Topology/Topology/PublishTopology.cs:line 122
+   at MassTransit.Topology.PublishTopology.MassTransit.IPublishTopology.GetMessageTopology[T]() in /_/src/MassTransit.Abstractions/Topology/Topology/PublishTopology.cs:line 39
+   at MassTransit.Transports.PublishEndpointProvider.CreateSendEndpoint[T]()
+   at MassTransit.Transports.PublishEndpointProvider.<GetPublishSendEndpoint>b__8_0[T](Type type) in /_/src/MassTransit/Transports/PublishEndpointProvider.cs:line 36
+   at MassTransit.Transports.SendEndpointCache`1.GetSendEndpointFromFactory(TKey address, SendEndpointFactory`1 factory) in /_/src/MassTransit/Transports/SendEndpointCache.cs:line 32
+   at MassTransit.Internals.Caching.PendingValue`2.<>c__DisplayClass6_0.<<CreateValue>g__CreateValueAsync|0>d.MoveNext() in /_/src/MassTransit/Internals/Caching/PendingValue.cs:line 41
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.Caching.MassTransitCache`3.<>c__DisplayClass12_0.<<GetOrAdd>g__Added|2>d.MoveNext() in /_/src/MassTransit/Internals/Caching/MassTransitCache.cs:line 74
+--- End of stack trace from previous location ---
+   at MassTransit.Transports.SendEndpointCache`1.GetSendEndpoint(TKey key, SendEndpointFactory`1 factory) in /_/src/MassTransit/Transports/SendEndpointCache.cs:line 25
+   at MassTransit.Transports.PublishEndpoint.<>c__DisplayClass18_0`1.<<PublishInternal>g__PublishAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Transports/PublishEndpoint.cs:line 149
+--- End of stack trace from previous location ---
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 20
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 13:57:00.264 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 13:57:00.438 MassTransit INF] #: Bus stopped: rabbitmq://localhost/
+[16-02-2025 14:00:57.638 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:00:57 +03:00
+[16-02-2025 14:00:57.976 Microsoft.Extensions.Hosting.Internal.Host ERR] #: Hosting failed to start
+System.ArgumentException: Messages types must not be in the System namespace: System.Collections.Generic.List<System.Guid> (Parameter 'T')
+   at MassTransit.Topology.PublishTopology.GetMessageTopology[T]() in /_/src/MassTransit.Abstractions/Topology/Topology/PublishTopology.cs:line 122
+   at MassTransit.Topology.PublishTopology.MassTransit.IPublishTopology.GetMessageTopology[T]() in /_/src/MassTransit.Abstractions/Topology/Topology/PublishTopology.cs:line 39
+   at MassTransit.Transports.PublishEndpointProvider.CreateSendEndpoint[T]()
+   at MassTransit.Transports.PublishEndpointProvider.<GetPublishSendEndpoint>b__8_0[T](Type type) in /_/src/MassTransit/Transports/PublishEndpointProvider.cs:line 36
+   at MassTransit.Transports.SendEndpointCache`1.GetSendEndpointFromFactory(TKey address, SendEndpointFactory`1 factory) in /_/src/MassTransit/Transports/SendEndpointCache.cs:line 32
+   at MassTransit.Internals.Caching.PendingValue`2.<>c__DisplayClass6_0.<<CreateValue>g__CreateValueAsync|0>d.MoveNext() in /_/src/MassTransit/Internals/Caching/PendingValue.cs:line 41
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.Caching.MassTransitCache`3.<>c__DisplayClass12_0.<<GetOrAdd>g__Added|2>d.MoveNext() in /_/src/MassTransit/Internals/Caching/MassTransitCache.cs:line 74
+--- End of stack trace from previous location ---
+   at MassTransit.Transports.SendEndpointCache`1.GetSendEndpoint(TKey key, SendEndpointFactory`1 factory) in /_/src/MassTransit/Transports/SendEndpointCache.cs:line 25
+   at MassTransit.Transports.PublishEndpoint.<>c__DisplayClass17_0`1.<<PublishInternal>g__PublishAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Transports/PublishEndpoint.cs:line 123
+--- End of stack trace from previous location ---
+   at WorkerService.Presentation.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation\Worker.cs:line 20
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[16-02-2025 14:00:58.097 MassTransit WRN] #: Failed to stop bus: rabbitmq://localhost/HP_CustomersRoleUpdaterPresentation_bus_tbuyyydz4f8pk7cjbdqwh6jog3?temporary=true ("Not Started")
+[16-02-2025 14:22:29.168 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:22:29 +03:00
+[16-02-2025 14:22:29.315 Microsoft.Hosting.Lifetime INF] #: Application started. Press Ctrl+C to shut down.
+[16-02-2025 14:22:29.317 Microsoft.Hosting.Lifetime INF] #: Hosting environment: "Development"
+[16-02-2025 14:22:29.355 Microsoft.Hosting.Lifetime INF] #: Content root path: "C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation"
+[16-02-2025 14:22:29.424 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 14:23:29.602 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:23:29 +03:00
+[16-02-2025 14:24:29.660 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:24:29 +03:00
+[16-02-2025 14:25:29.687 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:25:29 +03:00
+[16-02-2025 14:26:33.750 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:26:33 +03:00
+[16-02-2025 14:26:33.827 Microsoft.Hosting.Lifetime INF] #: Application started. Press Ctrl+C to shut down.
+[16-02-2025 14:26:33.829 Microsoft.Hosting.Lifetime INF] #: Hosting environment: "Development"
+[16-02-2025 14:26:33.831 Microsoft.Hosting.Lifetime INF] #: Content root path: "C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation"
+[16-02-2025 14:26:33.883 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 14:26:39.983 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:26:39 +03:00
+[16-02-2025 14:26:46.011 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:26:46 +03:00
+[16-02-2025 14:26:52.031 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:26:52 +03:00
+[16-02-2025 14:26:58.060 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:26:58 +03:00
+[16-02-2025 14:27:04.091 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:27:04 +03:00
+[16-02-2025 14:27:10.110 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:27:10 +03:00
+[16-02-2025 14:28:09.827 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:09 +03:00
+[16-02-2025 14:28:09.899 Microsoft.Hosting.Lifetime INF] #: Application started. Press Ctrl+C to shut down.
+[16-02-2025 14:28:09.901 Microsoft.Hosting.Lifetime INF] #: Hosting environment: "Development"
+[16-02-2025 14:28:09.903 Microsoft.Hosting.Lifetime INF] #: Content root path: "C:\cod\CustomerRoleUpdaterClone\CustomersRoleUpdater.Presentation"
+[16-02-2025 14:28:09.950 MassTransit INF] #: Bus started: rabbitmq://localhost/
+[16-02-2025 14:28:16.050 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:16 +03:00
+[16-02-2025 14:28:22.083 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:22 +03:00
+[16-02-2025 14:28:28.098 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:28 +03:00
+[16-02-2025 14:28:34.122 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:34 +03:00
+[16-02-2025 14:28:40.147 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:40 +03:00
+[16-02-2025 14:28:46.173 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:46 +03:00
+[16-02-2025 14:28:52.198 WorkerService.Presentation.Worker INF] #: Customers RoleUpdater running at: 02/16/2025 14:28:52 +03:00

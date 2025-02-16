@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.Extensions.Logging.EventLog;
 using Serilog;
 using MassTransit;
-using CustomersRoleUpdater.Application.Mappings;
+//using CustomersRoleUpdater.Application.Mappings;
 
 namespace WorkerService.Presentation;
 
@@ -43,10 +43,13 @@ public class Program
         builder.Logging.AddConfiguration();
         builder.Configuration.GetSection("Logging");
 
+        //builder.Services.AddAutoMapper(
+        //    CustomersRoleUpdater.Application.Mappings.CustomersMapperProfile);
+
         builder.Services.AddSingleton<ICustomerDataService, CustomersDataService>();
         builder.Services.AddSingleton<ICustomersStatusUpdater, CustomersStatusUpdater>();
 
-        builder.Services.AddAutoMapper(typeof(CustomersMapperProfile));
+        //builder.Services.AddAutoMapper(typeof(CustomersMapperProfile));
 
         var host = builder.Build();
         host.Run();

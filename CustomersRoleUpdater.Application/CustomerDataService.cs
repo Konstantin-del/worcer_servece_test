@@ -15,6 +15,7 @@ public class CustomersDataService : ICustomerDataService
     }
 
     Guid guid = Guid.NewGuid();
+    Guid guid1 = Guid.NewGuid();
 
     public async Task<List<Customer>>GetCustomersForUpdateByBirhtdayAsync()
     {
@@ -31,7 +32,7 @@ public class CustomersDataService : ICustomerDataService
     public async Task<List<Customer>> GetCustomersForUpdateByCountTransactionAsync()
     {
         //return await _httpClient.GetRequest("/count/");
-        return new List<Customer>() { new Customer() { Id = guid, Role = Role.Regular } };
+        return new List<Customer>() { new Customer() { Id = guid1, Role = Role.Regular } };
     }
     public async Task<List<Customer>> GetCustomersForUpdateBySumTransactionAsync()
     {

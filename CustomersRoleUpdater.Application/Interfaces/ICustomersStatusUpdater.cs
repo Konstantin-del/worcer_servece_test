@@ -5,7 +5,7 @@ namespace CustomersRoleUpdater.Application.Interfaces;
 
 public interface ICustomersStatusUpdater
 {
-    ListCustomerId UpdateCustomerRoles(List<Customer> customers);
+    List<Guid> UpdateCustomerRoles(List<Customer> customers);
 
     public Task <ListCustomerId> GetAllCustomersAndUpdateRoleAsync();
 
