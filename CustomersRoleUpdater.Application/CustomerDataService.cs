@@ -17,7 +17,7 @@ public class CustomersDataService : ICustomerDataService
     Guid guid = Guid.NewGuid();
     Guid guid1 = Guid.NewGuid();
 
-    public async Task<List<Customer>>GetCustomersForUpdateByBirhtdayAsync()
+    public async Task<List<Customer>>? GetCustomersForUpdateByBirhtdayAsync()
     {
         var query = new Dictionary<string, string>()
         {
@@ -29,12 +29,12 @@ public class CustomersDataService : ICustomerDataService
         //return await _httpClient.GetRequest<List<Customer>>($"/birthday/{resultQuery}");
         return new List<Customer>() {new Customer(){ Id = guid, Role=Role.Regular}};
     }
-    public async Task<List<Customer>> GetCustomersForUpdateByCountTransactionAsync()
+    public async Task<List<Customer>>? GetCustomersForUpdateByCountTransactionAsync()
     {
         //return await _httpClient.GetRequest("/count/");
         return new List<Customer>() { new Customer() { Id = guid1, Role = Role.Regular } };
     }
-    public async Task<List<Customer>> GetCustomersForUpdateBySumTransactionAsync()
+    public async Task<List<Customer>>? GetCustomersForUpdateBySumTransactionAsync()
     {
         //return await _httpClient.GetRequest("/sum/");
         return new List<Customer>() { new Customer() { Id = guid, Role = Role.Regular } };
